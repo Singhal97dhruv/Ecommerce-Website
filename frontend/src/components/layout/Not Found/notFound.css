@@ -1,0 +1,110 @@
+
+.container{
+    width: 100vw;
+    margin: 0px;
+    height: 100vh;
+    max-width: 100%;
+    background-color: black;
+    position: fixed;
+}
+.containerBox{
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    width: 70vw;
+    display: flex;
+    border-radius: 2%;
+    height: 85vh;
+    box-shadow: #ffcccc 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.imgBox{
+    width: 45vw;
+}
+.imgBox>img{
+    width: 30vw;
+    height: 80vh;
+    transform: translateY(2%) translateX(10%);
+}
+.containerBox2{
+ 
+    border-left: 1px solid tomato;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* align-items: center; */
+
+margin: 2vmax;
+}
+.containerBox2>h1{
+    margin-left: 2vmax;
+    width: 30vw;
+}
+.containerBox2{
+    color: white;
+    display: flex;
+    box-sizing: border-box;
+}
+.containerBox2>h1>span{
+    font-size: 120px;
+    font-family: 'Sigmar', cursive;
+    color: #ff3838;
+}
+.containerBox2>h1{
+    font-size: 35px;
+}
+.containerBox2>a>Button{
+    margin-top: 4.5vw;
+    background-color: #7d5fff;
+    color: black;
+    font:300 30px "Roboto";
+    font-weight: bold;
+    height: 6vmax;
+    width: 25vmax;
+    transition: transform 0.4s ease;
+}
+.containerBox2>a>Button:hover{
+    background-color: #18dcff;
+    transform: scale(1.1);
+}
+@media screen and (max-width: 600px) {
+    .PageNotFound > a {
+      padding: 3vw 6vw;
+      font: 400 4vw "Roboto";
+      margin: 2vmax;
+    }
+  
+    .PageNotFound > svg {
+      font-size: 20vw;
+    }
+    .PageNotFound > p {
+      margin: 2vmax;
+      font-size: 5vw;
+    }
+    .imgBox{
+        display: none;
+    }
+    .containerBox2{
+ 
+        border-left: 0;
+        display: flex;
+        flex-direction: column;
+        /* text-align: center; */
+        /* justify-content: center; */
+
+        align-items: center;
+    
+    margin: 2vmax;
+    }
+    .containerBox2>h1>span{
+        font-size: 80px;
+    }
+    .containerBox2>h1{
+        font-size: 25px;
+    }
+    .containerBox2>a>Button{
+        margin-top: 5vw;
+        font:300 15px "Roboto";
+        height: 8vmax;
+        width: 25vmax;
+    }
+  }

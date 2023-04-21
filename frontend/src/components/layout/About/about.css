@@ -1,0 +1,170 @@
+.aboutSection {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    background-image: linear-gradient(
+        to bottom right,
+        rgb(78, 81, 255),
+        rgb(74, 137, 189)
+      );
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    position: fixed;
+  }
+  
+  .aboutSectionGradient {
+    background-image: linear-gradient(
+      to bottom right,
+      rgb(78, 81, 255),
+      rgb(74, 137, 189)
+    );
+  }
+  
+  .aboutSectionContainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* background-color: rgb(255, 255, 255); */
+    background-color: black;
+    width: 80vw;
+    height: 80vh;
+    transform: translateX(-50%) translateY(-50%);
+    /* box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.192); */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .aboutSectionContainer > h1 {
+    font: 400 3vmax "Roboto";
+    color: tomato;
+    margin: 2vmax;
+  }
+  
+  .aboutSectionContainer > div {
+    display: flex;
+    width: 100%;
+  }
+  .profilePicContainer{
+    width: "12vmax";
+     height: "12vmax";
+     margin-top: -2vmax;
+     margin: "2vmax 0";
+     border-radius: 50%;
+     overflow: hidden;
+  }
+  .profilePic{
+    transition: transform 0.4s ease-in-out;
+  }
+  .profilePic:hover{
+    transform: scale(1.8);
+    /* overflow: auto; */
+    
+  }
+  
+  .aboutSectionContainer > div > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vmax;
+    box-sizing: border-box;
+  }
+  .aboutSectionContainer>div>div >h2{
+    font-size: 30px;
+    color: #f368e0;
+  }
+  .aboutSectionContainer > div > div > p {
+    color: rgba(0, 0, 0, 0.623);
+    font: 100 1vmax "Roboto";
+  }
+  
+  .aboutSectionContainer > div > div > button {
+    margin: 0.5vmax 0;
+    color: #1e90ff;
+    font-weight: bolder;
+    font-size: 15px;
+  }
+  
+  .aboutSectionContainer > div > div > span {
+    font: 100 1vmax "Roboto";
+    color: #EE5A24;
+    text-align: center;
+    width: 80%;
+  }
+  
+  .aboutSectionContainer2 {
+    border-left: 1px solid tomato;
+    
+  }
+  
+  .aboutSectionContainer2 h2 {
+    color: #f368e0;
+    font: 100 2vmax "Roboto";
+    margin: 2vmax;
+  }
+  
+  .aboutSectionContainer2 > a > svg {
+    font-size: 4vmax;
+    margin: .5vmax;
+  }
+  .aboutSectionContainer2 > a{
+    
+  }
+  
+  .githubSvgIcon {
+    color: #B53471;
+  }
+  .githubSvgIcon:hover{
+    transform:scale(1.1);
+  }
+  
+  .linkedinSvgIcon {
+    color: #1e90ff;
+  }
+  .linkedinSvgIcon:hover{
+    transform: scale(1.1);
+  }
+  .emailSvgIcon{
+    color: #B53471;
+  }
+  .emailSvgIcon:hover{
+    transform: scale(1.1);
+  }
+  
+  @media screen and (max-width: 600px) {
+    .aboutSectionContainer > div {
+      display: block;
+    }
+  
+    .aboutSectionContainer > h1 {
+      font: 400 5vmax "Roboto";
+      margin: 3vmax;
+    }
+  
+    .aboutSectionContainer > div > div > p {
+      font: 100 2vmax "Roboto";
+    }
+  
+    .aboutSectionContainer > div > div > span {
+      font: 100 1.4vmax "Roboto";
+      width: 70%;
+    }
+  
+    .aboutSectionContainer2 {
+      border-left: none;
+    }
+  
+    .aboutSectionContainer2 > h2 {
+      font: 100 3vmax "Roboto";
+      margin: 2vmax;
+    }
+  
+    .aboutSectionContainer2 > a > svg {
+      font-size: 6vmax;
+      margin: 1vmax;
+    }
+  }
