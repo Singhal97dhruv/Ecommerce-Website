@@ -13,7 +13,7 @@ const mongoose=require('mongoose');
 // }
 const connectDatabase=()=>{
   mongoose.set("strictQuery", false);
-  mongoose.connect(process.env.DB_URI,{
+  mongoose.connect("mongodb+srv://dhruvsinghal9876:Dhruv%40123@ecommerce.46u07xt.mongodb.net/Ecommerce?retryWrites=true&w=majority",{
     useNewUrlParser:true,
     useUnifiedTopology:true,
     
